@@ -72,16 +72,46 @@
         <section class="section panel reveal">
           <div class="gallery">
             <h2 class="section-title">Image Gallery</h2>
-            <div class="gallery-grid">
-              <img src="../assets/sample1.png" alt="Sample image 1" />
-              <img src="../assets/sample2.png" alt="Sample image 2" />
-              <img src="../assets/sample3.png" alt="Sample image 3" />
-              <img src="../assets/sample4.png" alt="Sample image 4" />
+            <p class="gallery-note">Tap any image to view fullscreen.</p>
+            <div class="marquee-shell">
+              <div class="marquee-track" aria-label="Sample image marquee">
+                <button class="marquee-item" type="button" aria-label="Open sample image 1">
+                  <img class="zoomable" src="../assets/sample1.png" alt="Sample image 1" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 2">
+                  <img class="zoomable" src="../assets/sample2.png" alt="Sample image 2" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 3">
+                  <img class="zoomable" src="../assets/sample3.png" alt="Sample image 3" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 4">
+                  <img class="zoomable" src="../assets/sample4.png" alt="Sample image 4" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 1 duplicate">
+                  <img class="zoomable" src="../assets/sample1.png" alt="Sample image 1 duplicate" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 2 duplicate">
+                  <img class="zoomable" src="../assets/sample2.png" alt="Sample image 2 duplicate" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 3 duplicate">
+                  <img class="zoomable" src="../assets/sample3.png" alt="Sample image 3 duplicate" />
+                </button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 4 duplicate">
+                  <img class="zoomable" src="../assets/sample4.png" alt="Sample image 4 duplicate" />
+                </button>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
+
+    <div id="imageLightbox" class="image-lightbox" hidden>
+      <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Close image viewer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImage" src="" alt="Fullscreen sample" />
+    </div>
 
     <footer class="site-footer">
       <div class="container">

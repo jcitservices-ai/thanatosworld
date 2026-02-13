@@ -389,6 +389,100 @@ h1 {
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
 }
 
+.gallery-note {
+  color: var(--text-300);
+  margin-bottom: 0.8rem;
+}
+
+.marquee-shell {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: max-content;
+  padding: 0.75rem;
+  animation: marqueeScroll 26s linear infinite;
+}
+
+.marquee-shell:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-item {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.marquee-item img {
+  width: 250px;
+  height: 320px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+
+.marquee-item:hover img {
+  transform: translateY(-3px);
+  border-color: rgba(200, 163, 74, 0.6);
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox img {
+  max-width: min(96vw, 1200px);
+  max-height: 88vh;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(0, 0, 0, 0.55);
+  color: var(--text-100);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
 .cta {
   display: inline-flex;
   align-items: center;
@@ -589,6 +683,11 @@ h1 {
     aspect-ratio: 4 / 5;
   }
 
+  .marquee-item img {
+    width: 190px;
+    height: 250px;
+  }
+
   .section {
     margin-top: 1.2rem;
   }
@@ -645,6 +744,16 @@ h1 {
 
   .age-card {
     padding: 1rem;
+  }
+
+  .marquee-track {
+    gap: 0.5rem;
+    padding: 0.6rem;
+  }
+
+  .marquee-item img {
+    width: 160px;
+    height: 210px;
   }
 }
 

@@ -28,3 +28,41 @@ if (ageGate && ageConfirm) {
     document.body.style.overflow = "";
   });
 }
+
+const lightbox = document.getElementById("imageLightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const zoomableImages = document.querySelectorAll(".zoomable");
+
+if (lightbox && lightboxImage && lightboxClose && zoomableImages.length) {
+  const openLightbox = (src, altText) => {
+    lightboxImage.src = src;
+    lightboxImage.alt = altText || "Fullscreen image";
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    lightbox.hidden = true;
+    lightboxImage.src = "";
+    document.body.style.overflow = "";
+  };
+
+  zoomableImages.forEach((img) => {
+    img.addEventListener("click", () => openLightbox(img.src, img.alt));
+  });
+
+  lightboxClose.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+}
