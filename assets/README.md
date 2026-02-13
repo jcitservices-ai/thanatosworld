@@ -5,7 +5,7 @@ Place your initial files in this folder using these names:
 - `logo.png`
 - `profile.png`
 - `teaser.mp4`
-- `sample-video.mp4`
+- `teaser.MOV`
 - `sample1.png`
 - `sample2.png`
 - `sample3.png`
