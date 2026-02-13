@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANATOS | Sample Content</title>
+    <meta
+      name="description"
+      content="Sample content previews from THANATOS including teaser clips and image gallery."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../">
+          <img src="../assets/logo.png" alt="THANATOS logo" />
+          <span>THANATOS</span>
+        </a>
+        <div class="header-right">
+          <ul class="nav-links">
+            <li><a href="../">About</a></li>
+            <li><a class="active" href="../sample-content/">Sample Content</a></li>
+            <li><a href="../build-my-site/">Build My Site</a></li>
+          </ul>
+          <div class="social-top" aria-label="External links">
+            <a class="social-icon" href="https://x.com/troyikesx" target="_blank" rel="noreferrer noopener" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a class="social-icon" href="https://uv.club/nervsqt" target="_blank" rel="noreferrer noopener" aria-label="UV Club">
+              <i class="fa-solid fa-link"></i>
+            </a>
+            <a class="social-icon" href="https://justfor.fans/thanatos_" target="_blank" rel="noreferrer noopener" aria-label="JustForFans">
+              <i class="fa-solid fa-fire"></i>
+            </a>
+            <a class="social-icon" href="https://t.me/thanatos1xxx" target="_blank" rel="noreferrer noopener" aria-label="Telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a class="social-icon" href="https://jcit.digital" target="_blank" rel="noreferrer noopener" aria-label="JCIT Digital">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="panel reveal">
+          <div class="video-wrap">
+            <h1 class="section-title">Sample Video</h1>
+            <video controls preload="metadata" poster="../assets/sample1.png">
+              <source src="../assets/sample-video.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+          </div>
+        </section>
+
+        <section class="section panel reveal">
+          <div class="gallery">
+            <h2 class="section-title">Image Gallery</h2>
+            <div class="gallery-grid">
+              <img src="../assets/sample1.png" alt="Sample image 1" />
+              <img src="../assets/sample2.png" alt="Sample image 2" />
+              <img src="../assets/sample3.png" alt="Sample image 3" />
+              <img src="../assets/sample4.png" alt="Sample image 4" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> THANATOS. All rights reserved.</div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
