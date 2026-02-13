@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THANATOS | Gallery</title>
+    <meta name="description" content="THANATOS gallery with videos and photos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+  </head>
+  <body>
+    <a class="top-promo" href="https://jcit.digital" target="_blank" rel="noreferrer noopener">
+      <div class="container top-promo-inner">
+        <span class="top-promo-text">Want your own website? Contact JCIT Services.</span>
+        <span class="top-promo-cta">GET STARTED</span>
+      </div>
+    </a>
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="../">
+          <img src="../../assets/logo.png" alt="THANATOS logo" />
+          <span>THANATOS</span>
+        </a>
+        <div class="header-right">
+          <ul class="nav-links">
+            <li><a href="../">About</a></li>
+            <li><a class="active" href="../gallery/">Gallery</a></li>
+            <li><a href="../partners/">Partners</a></li>
+          </ul>
+          <div class="social-top" aria-label="Creator links">
+            <a class="social-icon" href="https://fansly.com/_thanatos" target="_blank" rel="noreferrer noopener" aria-label="Fansly"><i class="fa-solid fa-crown"></i></a>
+            <a class="social-icon" href="https://justfor.fans/thanatos_" target="_blank" rel="noreferrer noopener" aria-label="JustForFans"><i class="fa-solid fa-fire"></i></a>
+            <a class="social-icon" href="https://t.me/thanatos1xxx" target="_blank" rel="noreferrer noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a class="social-icon" href="https://uv.club/nervsqt" target="_blank" rel="noreferrer noopener" aria-label="UV Club"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="panel reveal">
+          <div class="gallery">
+            <h1 class="section-title">Video Carousel</h1>
+            <div class="video-carousel">
+              <div class="video-track">
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample5.jpg"><source src="../../assets/teaser.MOV" type="video/mp4" /></video></article>
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample6.jpg"><source src="../../assets/teaser3.MP4" type="video/mp4" /></video></article>
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample7.jpg"><source src="../../assets/teaser4.MP4" type="video/mp4" /></video></article>
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample8.jpg"><source src="../../assets/teaser5.MOV" type="video/mp4" /></video></article>
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample6.jpg"><source src="../../assets/teaser6.MOV" type="video/mp4" /></video></article>
+                <article class="video-slide"><video controls preload="metadata" poster="../../assets/sample7.jpg"><source src="../../assets/teaser7.MOV" type="video/mp4" /></video></article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section panel reveal">
+          <div class="gallery">
+            <h2 class="section-title">Photo Marquee</h2>
+            <p class="gallery-note">Tap any image to view fullscreen.</p>
+            <div class="marquee-shell">
+              <div class="marquee-track" aria-label="Sample image marquee">
+                <button class="marquee-item" type="button" aria-label="Open sample image 5"><img class="zoomable" src="../../assets/sample5.jpg" alt="Sample image 5" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 6"><img class="zoomable" src="../../assets/sample6.jpg" alt="Sample image 6" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 7"><img class="zoomable" src="../../assets/sample7.jpg" alt="Sample image 7" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 8"><img class="zoomable" src="../../assets/sample8.jpg" alt="Sample image 8" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 5 duplicate"><img class="zoomable" src="../../assets/sample5.jpg" alt="Sample image 5 duplicate" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 6 duplicate"><img class="zoomable" src="../../assets/sample6.jpg" alt="Sample image 6 duplicate" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 7 duplicate"><img class="zoomable" src="../../assets/sample7.jpg" alt="Sample image 7 duplicate" /></button>
+                <button class="marquee-item" type="button" aria-label="Open sample image 8 duplicate"><img class="zoomable" src="../../assets/sample8.jpg" alt="Sample image 8 duplicate" /></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div id="imageLightbox" class="image-lightbox" hidden>
+      <button id="lightboxClose" class="lightbox-close" type="button" aria-label="Close image viewer"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightboxImage" src="" alt="Fullscreen sample" />
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> THANATOS. All rights reserved.</p>
+        <p>This website was created by <a href="https://jcit.digital" target="_blank" rel="noreferrer noopener">JCIT Services</a> as part of a marketing campaign partnership. All necessary terms and conditions can be found on their website.</p>
+      </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
